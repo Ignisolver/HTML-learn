@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day3</title>
+    <style>
+        .A {
+            background-color: red;
+        }
+        .B {
+            background-color: blue;
+            text-underline-color: red;
+        }
+        p.A {
+            background-color: green;
+        }
+        #MYid {
+            background-color: springgreen;
+        }
+    </style>
+
+</head>
+<body>
+<a href="#MYid"> Id chapter</a>
+<p>
+    Paragraph txt with
+    <span style="border: 2px solid black"> zaznaczony tkest</span>
+    tekst dalej
+</p>
+
+<div style="background-color: pink">
+    Za pomocą div grupuje się elementy
+</div>
+<div class="A">
+    Jedna część tekstu klasa A
+</div>
+<div class="B">
+    Druga część tekstu klasa B
+</div>
+<div class="A">
+    Trzecia część tekstu klasa A
+</div>
+<div class="B">
+    Czwarta część tekstu klasa B
+</div>
+<p class="A">
+    Text klasy A ale w paragrafie
+</p>
+
+
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+<p id="MYid">
+    this is paragraph with ID
+</p>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+<div></div>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+<iframe src="menu_horiz.html" title="recurention" style="height:400px; width:400px"> </iframe>
+<iframe src="https://www.youtube.com/watch?v=CkE6KcmqBPM" title="recurention" style="height:400px; width:400px"> </iframe>
+<iframe src="index.html" name="iframe_a" title="target iframe"></iframe>
+<a href="day_3.html" target="iframe_a"> Link</a>
+</body>
+</html>

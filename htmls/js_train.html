@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS training</title>
+</head>
+<body>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<button type="button"
+        onclick="document.getElementById('demo').style.backgroundColor = 'red'">
+    Change background colour
+</button>
+
+<p id="demo"></p>
+<p> JS can change conent, attributes and styles <br>
+You can use JS in < script > tags or directly as string <br>
+< noscript > tag is used to show sth when js can not be run</p>
+<p>
+    < img src="picture.jpg" > 	The "picture.jpg" file is located in the same folder as the current page <br>
+< img src="images/picture.jpg" > 	The "picture.jpg" file is located in the images folder in the current folder <br>
+< img src="/images/picture.jpg" > 	The "picture.jpg" file is located in the images folder at the root of the current web <br>
+< img src="../picture.jpg" > 	The "picture.jpg" file is located in the folder one level up from the current folder <br>
+</p>
+<p> Best practice is used relative paths
+</p>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<p>
+    The < label > element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the < label > element, it toggles the radio button/checkbox.
+The for attribute of the < label > tag should be equal to the id attribute of the < input > element to bind them together.
+</p>
+<form target="_blank">
+    <label for="inp_id">button</label> <br>
+    <input type="button"> <br>
+    <label>text</label> <br>
+    <input type="text" name="text" id="inp_id" value="Type your text"> <br>
+    <label for="chb_id">checkbox</label> <br>
+    <input type="checkbox" id="chb_id"> <br>
+    <label for="email_id">email</label> <br>
+    <input type="email" id="email_id"> <br>
+    <label for="image">image</label> <br>
+    <input type="image" id="image" alt="instead of image"> <br>
+    <label>radio</label> <br>
+    <p>Dla tych dla których chcemy zrobić wybór jeden z muszą mieć taką samą nazwę</p>
+    <input type="radio" value="1" id="butt-id-1" name="liczby">
+    <label for="butt-id-1"> 1</label> <br>
+    <input type="radio" value="2"  id="butt-id-2" name="liczby">
+    <label for="butt-id-2"> 2</label> <br>
+    <input type="radio" value="3"  id="butt-id-3" name="liczby">
+    <label for="butt-id-3"> 3</label> <br>
+    <select id="cars" name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+  </select> <br>
+     <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+    <br>
+    <label>submit</label> <br>
+    <input type="submit" value="Submit"> <br>
+    <p> parametr action w form definiuje co się stanie gdy się kluknie przycisk submit<br>
+    The target attribute specifies where to display the response that is received after submitting the form.
+    <br>
+    The method attribute specifies the HTTP method to be used when submitting the form data. GET/POST. Get sends in URL<br>
+    Form has some attrs</p>
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+</form>
+</body>
+</html>

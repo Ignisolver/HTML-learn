@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+            alignment: center;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table {
+            width: 10%;
+        }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+</style>
+
+</head>
+<body>
+<table>
+    <caption>Tabale caption</caption>
+    <colgroup>
+        <col span="2">
+        <col span="4" style="background-color: red" >
+    </colgroup>
+    <tr style="height: 50px">
+        <th> Nagłówki</th>
+        <th rowspan="2"> KOza</th>
+        <th style="width: 70%"> Krowa</th>
+
+        <th> Kura</th>
+    </tr>
+    <tr>
+        <th> liczby</th>
+        <td colspan="2"> 1 </td>
+    </tr>
+</table>
+
+
+
+
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+
+
+
+</body>
+</html>

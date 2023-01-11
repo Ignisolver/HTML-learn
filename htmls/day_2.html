@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From Images</title>
+    <link rel="icon" type="image/x-icon" href="../img/maciej.png">
+    <style>
+      img {
+        width: 45%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+          clear: both;
+      }
+      #paragraph_with_image {
+          background-image: url("../img/las.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+      }
+      body {
+          background-color: wheat;
+      }
+
+    </style>
+</head>
+<body>
+  <img src="../img/IMG_20220712_120039.jpg" alt="koksy" usemap="#koks_map">
+  <img src="../img/cat.webp" alt="cat">
+  <img src="../img/cat.webp" alt="cat" style="float:right">
+  <p align="right">Text</p>
+  <p align="left">Text</p>
+
+   <map name="koks_map">
+       <area shape="rect" coords="90, 90, 130, 140" alt="Maciej" title="Maciej" href="../img/maciej.png" onclick="myFunction()">
+       <area shape="rect" coords="160,85, 190, 130" alt="Wojtek" title="Wojtek" href="../img/wojo.png">
+   </map>
+    <p>Użycie poly w mapie tworzy pole z połączonych prostymi liniami punktów podaje sie dwa na raz np. 90,90,130,140,...</p>
+    <p> Co w przypadku skalowania - psuje się!</p>
+<script>
+function myFunction() {
+  alert("You clicked the human!");
+}
+</script>
+<p id="paragraph_with_image" style="margin-top: 10px; margin-left: 0px; clear: both"> Tekst o lesie <br> <br> <br><br> aaaaaaaaaaaaaaa</p>
+<picture>
+  <source media="(min-width:1650px)" srcset="../img/IMG_20220712_120039.jpg">
+  <source media="(min-width:1005px)" srcset="../img/las.png">
+  <source media="(min-width:505px)" srcset="../img/cat.webp">
+  <img src="../img/maciej.png" alt="różne" style="width:auto;">
+</picture>
+
+</body>
+</html>
